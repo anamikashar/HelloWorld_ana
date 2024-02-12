@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Sanity">
+    <classes>
+      <class name="suite.module1">
+		  <methods>
+			  <include name="test001"></include>
+		  </methods>
+      </class>
+      <class name="suite.module2">
+		  <methods>
+			  <exclude name="test003"></exclude>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
